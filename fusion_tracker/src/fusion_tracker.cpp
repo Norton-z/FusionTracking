@@ -269,6 +269,11 @@ int Tracker::initDataSet(){
 		if(getOneEvent(e)){		// extract one event.
 			for(DataPatch& dp:data_patch_vector_){
 				dp.accumulateEvent(e);		// accmulate for each data set.
+                /*
+                 * 添加event处理部分
+                 */
+
+
 				if(dp.is_accumulated_)
 					accum_number++;
 			}

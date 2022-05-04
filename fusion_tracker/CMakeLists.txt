@@ -2,6 +2,8 @@ cmake_minimum_required(VERSION 2.8.3)
 project(fusion_tracker)
 
 find_package(OpenCV REQUIRED)
+find_package(gflags REQUIRED)
+
 find_package(catkin REQUIRED COMPONENTS
   gflags_catkin
   dvs_msgs
